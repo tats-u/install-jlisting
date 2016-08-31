@@ -4,6 +4,10 @@
 # This script is licensed under The MIT License.
 # https://opensource.org/licenses/MIT
 
+if ! which kpsewhich >/dev/null 2>&1; then
+    echo 'Any TeX distributions are not installed or this script cannnot access one.' >&2
+    exit 1
+fi
 TEXMFHOME=`kpsewhich -var-value TEXMFHOME`
 if [ ! -d $TEXMFHOME ]; then
     echo 'Any TeX distributions are not installed or this script cannnot access one.' >&2
