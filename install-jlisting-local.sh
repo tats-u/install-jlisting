@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # Copyright (C) 2016 Tats.U.
 # This script is licensed under The MIT License.
