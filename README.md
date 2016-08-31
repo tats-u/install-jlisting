@@ -9,9 +9,9 @@ After install a TeX distribution, and execute the following command:
 
 ``` bash
 # Installing in your machine:
-curl -Ls https://raw.githubusercontent.com/tats-u/install-jlisting/master/install-jlisting.sh | sudo PATH="$PATH" sh -
+curl -LsSf https://raw.githubusercontent.com/tats-u/install-jlisting/master/install-jlisting.sh | sudo PATH="$PATH" bash -
 # Installing in a shared machine:
-curl -Ls https://raw.githubusercontent.com/tats-u/install-jlisting/master/install-jlisting-local.sh | sh -
+curl -LsSf https://raw.githubusercontent.com/tats-u/install-jlisting/master/install-jlisting-local.sh | bash -
 ```
 
 ### Windows
@@ -19,9 +19,9 @@ curl -Ls https://raw.githubusercontent.com/tats-u/install-jlisting/master/instal
 
 ``` bash
 # Installing in your machine (Important: Git Bash or MSYS2 must be run AS ADMINISTRATOR):
-curl -Ls https://raw.githubusercontent.com/tats-u/install-jlisting/master/install-jlisting.sh | sh -
+curl -LsSf https://raw.githubusercontent.com/tats-u/install-jlisting/master/install-jlisting.sh | bash -
 # Installing in a shared machine:
-curl -Ls https://raw.githubusercontent.com/tats-u/install-jlisting/master/install-jlisting-local.sh | sh -
+curl -LsSf https://raw.githubusercontent.com/tats-u/install-jlisting/master/install-jlisting-local.sh | bash -
 ```
 
 ### How to use jlisting
