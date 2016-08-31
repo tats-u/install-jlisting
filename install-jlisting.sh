@@ -34,7 +34,7 @@ fi
 JLISTING_DIR=$TEXMFLOCAL/tex/platex/jlisting
 JLISTING=$JLISTING_DIR/jlisting.sty
 mkdir -p $JLISTING_DIR && {
-    cp $TMPFILE $JLISTING || {
+    cp $TMPFILE $JLISTING --no-preserve=mode || {
 	echo "cannot copy jlisting to \`$JLISTING.'">&2
 	exit 1
     } &&
