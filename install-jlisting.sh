@@ -19,13 +19,13 @@ atexit() {
 TMPFILE=`mktemp`
 trap atexit EXIT
 trap "trap - EXIT; atexit ; exit -1" SIGHUP SIGTERM SIGINT
-curl -Ls http://prdownloads.osdn.jp/mytexpert/26068/jlisting.sty.bz2 | bunzip2 -c > $TMPFILE
+curl -LsSf http://prdownloads.osdn.jp/mytexpert/26068/jlisting.sty.bz2 | bunzip2 -c > $TMPFILE
 if [ $? != 0 ]; then
     echo 'jlisting is not found and cannnot be installed.' >&2
     exit 1
 fi
 JLISTING_EXISTING=`kpsewhich jlisting.sty`
-if [ -f $JLISTING_EXISTING ]; then
+if [ -n "$JLISTING_EXISTING" ] && [ -f "$JLISTING_EXISTING" ]; then
     if cmp -s $JLISTING_EXISTING $TMPFILE; then
        echo "jlisting is already installed in \`$JLISTING_EXISTING.'">&2
        exit 1
