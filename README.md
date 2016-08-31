@@ -9,7 +9,7 @@ After install a TeX distribution, and execute the following command:
 
 ``` bash
 # Installing in your machine:
-curl -Ls https://raw.githubusercontent.com/tats-u/install-jlisting/master/install-jlisting.sh | sudo sh -
+curl -Ls https://raw.githubusercontent.com/tats-u/install-jlisting/master/install-jlisting.sh | sudo PATH="$PATH" sh -
 # Installing in a shared machine:
 curl -Ls https://raw.githubusercontent.com/tats-u/install-jlisting/master/install-jlisting-local.sh | sh -
 ```
